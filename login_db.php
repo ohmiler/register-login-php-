@@ -25,7 +25,11 @@
                 $_SESSION['username'] = $username;
                 $_SESSION['success'] = "Your are now logged in";
                 header("location: index.php");
-            } 
+            } else {
+                array_push($errors, "Wrong Username or Password");
+                $_SESSION['error'] = "Wrong Username or Password!";
+                header("location: login.php");
+            }
         } else {
             array_push($errors, "Username & Password is required");
             $_SESSION['error'] = "Username & Password is required";
