@@ -27,8 +27,8 @@
                 header("location: index.php");
             } 
         } else {
-            array_push($errors, "Wrong username/password combination");
-            $_SESSION['error'] = "Wrong username or password try again!";
+            array_push($errors, "Username & Password is required");
+            $_SESSION['error'] = "Username & Password is required";
             header("location: login.php");
         }
     }
