@@ -1,7 +1,4 @@
-<?php 
-    session_start();
-    include('server.php'); 
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,9 +11,6 @@
 </head>
 <body>
     
-    <div class="header">
-        <h2>Register</h2>
-    </div>
 
     <form action="register_db.php" method="post">
         <?php include('errors.php'); ?>
@@ -29,7 +23,11 @@
                     ?>
                 </h3>
             </div>
-        <?php endif ?>
+            <?php endif ?>
+            <div class="header">
+            <h2>User Registeration</h2>
+        </div>
+
         <div class="input-group">
             <label for="username">Username</label>
             <input type="text" name="username">
@@ -47,9 +45,9 @@
             <input type="password" name="password_2">
         </div>
         <div class="input-group">
-            <button type="submit" name="reg_user" class="btn">Register</button>
+            <button type="submit" name="reg_user" class="btn">Register Now</button>
         </div>
-        <p>Already a member? <a href="login.php">Sign in</a></p>
+        <p class="ald-mem">Already a member? <a href="login.php">Sign in</a></p>
     </form>
 
 </body>

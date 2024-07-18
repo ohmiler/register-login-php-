@@ -5,30 +5,58 @@
 
 body {
     font-size: 120%;
-    background: #f8f8f8;
+    background: #2c2626;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-.header {
-    width: 30%;
-    margin: 50px auto 0px;
-    color: white;
-    background: #5f9ea0;
-    text-align: center;
-    border: 1px solid #b0c4de;
-    border-bottom: none;
-    border-radius: 10px 10px 0px 0px;
-    padding: 20px;
-}
-
 form {
     width: 30%;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #b0c4de;
-    background: white;
-    border-radius: 0px 0px 10px 10px;
+    background: rgb(0, 0, 0);
+    border-radius: 20px;
+    color: white;
+    margin-top: 170px;
+    box-shadow: 10px 20px 20px rgb(122, 119, 119);
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+
+}
+form:hover { 
+    transform: translateX(-3px);
+    box-shadow: 15px 25px 20px rgb(122, 119, 119);
+
+}
+form .header {
+    width: 78%;
+    color: rgb(243, 243, 243);
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 5px;
+    margin-left: 25px;
+    border: 1px solid white;
+    border-top: hidden;
+    border-radius: 20px;
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+
+}
+form .header:hover {
+    transform: translateY(-3px);
+    box-shadow: 3px 5px 20px rgb(122, 119, 119);
+
 }
 
+.ald-mem { 
+    font-size: 17px;
+}
+.ald-mem a { 
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease,text-decoration 0.5s ease;
+}
+.ald-mem a:hover { 
+    color: green;
+    text-decoration: underline;
+}
 .homeheader {
     text-align: center;
     font-size: 5rem;
@@ -57,7 +85,7 @@ form {
     width: 93%;
     padding: 5px 10px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 20px;
     border: 1px solid gray;
 }
 
@@ -65,9 +93,20 @@ form {
     padding: 10px;
     font-size: 15px;
     color: white;
-    background: #5f9ea0;
-    border: none;
-    border-radius: 5px;
+    background: #030404;
+    border-radius: 20px;
+    transition:box-shadow 0.3s ease,transform 0.3s ease ;
+    border-color: white;
+
+}
+.btn:hover {
+    box-shadow: 5px 5px 5px gray;
+    cursor: pointer;
+    transform: translateY(-2px);
+    color: black;
+    background-color: white;
+    border-color: black;
+
 }
 
 .error {
